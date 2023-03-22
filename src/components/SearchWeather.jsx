@@ -8,7 +8,7 @@ function SearchWeather() {
   const [input, setInput] = useState("");
   const getApiData = async () => {
     const response = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=c01207faccab3cb16ee1d90f019e486c`
+      `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=Your API ID`
     ).then((response) => response.json());
     console.log(response);
     console.log(response.timezone);
